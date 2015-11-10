@@ -91,7 +91,7 @@
                                 </subviews>
                                 <animations/>
                             </scrollView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="Krn-Th-i8u">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="Krn-Th-i8u" userLabel="tabs">
                                 <rect key="frame" x="67" y="26" width="185" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -102,7 +102,7 @@
                                 </segments>
                                 <color key="tintColor" red="0.4039215686" green="0.73333333329999995" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="reschedule" id="MNe-fb-FRx">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="reschedule" id="BAn-Zd-0z7">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
@@ -121,7 +121,7 @@
                         <outlet property="leftSwipe" destination="a9E-O7-89p" id="Dl9-H6-Myt"/>
                         <outlet property="listIcon" destination="gFQ-Kg-DnO" id="SwF-gf-V79"/>
                         <outlet property="messageView" destination="J5W-ni-ApM" id="ciN-uB-vA9"/>
-                        <outlet property="rescheduleView" destination="MNe-fb-FRx" id="k1l-bD-DQo"/>
+                        <outlet property="rescheduleImage" destination="BAn-Zd-0z7" id="Iby-fa-uXC"/>
                         <outlet property="rightSwipe" destination="Mc0-h3-hav" id="nFP-xq-2Nd"/>
                         <outlet property="scrollView" destination="cTC-hU-waA" id="Lnz-Fk-ITe"/>
                         <outlet property="singleMessage" destination="KGP-hD-CZh" id="oJB-Zc-xXT"/>

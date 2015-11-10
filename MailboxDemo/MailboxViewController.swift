@@ -20,7 +20,7 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var listIcon: UIImageView!
     @IBOutlet weak var leftSwipe: UIView!
     @IBOutlet weak var rightSwipe: UIView!
-    @IBOutlet weak var rescheduleView: UIImageView!
+    @IBOutlet weak var rescheduleImage: UIImageView!
 
     
     var messageOriginalCenter: CGPoint!
@@ -45,7 +45,9 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-   
+
+    
+    
     @IBAction func messageScroll(sender: UIPanGestureRecognizer) {
         
         
@@ -93,7 +95,8 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
                 singleMessage.backgroundColor = UIColor(red: 215/255.0, green: 166/255.0, blue: 120/255.0, alpha: 1.0)
                 laterIcon.alpha = 0
                 listIcon.alpha = 1
-                rescheduleView.alpha = 0
+                rescheduleImage.alpha = 1
+
             }
 
         
@@ -104,5 +107,21 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
             }
        
         }
-        
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
+    
+    
+    /*
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
+    }
+    */
+    
+}
