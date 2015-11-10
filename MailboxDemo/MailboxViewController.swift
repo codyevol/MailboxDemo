@@ -20,6 +20,7 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var listIcon: UIImageView!
     @IBOutlet weak var leftSwipe: UIView!
     @IBOutlet weak var rightSwipe: UIView!
+    @IBOutlet weak var rescheduleView: UIImageView!
 
     
     var messageOriginalCenter: CGPoint!
@@ -40,6 +41,7 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
             archiveIcon.alpha = 0.5
             listIcon.alpha = 0
             laterIcon.alpha = 0.5
+        
         
     }
     
@@ -71,6 +73,9 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
             } else if translation.x > 160{
                 
                 singleMessage.backgroundColor = UIColor(red: 203/255.0, green: 6/255.0, blue: 30/255.0, alpha: 1.0)
+                
+                archiveIcon.alpha = 0
+                deleteIcon.alpha = 1
             
             } else if translation.x < 63 && translation.x > -63 {
                 
@@ -79,10 +84,16 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
             } else if translation.x < -64  && translation.x > -160{
                 
                 singleMessage.backgroundColor = UIColor(red: 249/255.0, green: 210/255.0, blue: 70/255.0, alpha: 1.0)
+                laterIcon.alpha = 1
+                listIcon.alpha = 0
+            
             
             } else if translation.x < -160 {
                 
                 singleMessage.backgroundColor = UIColor(red: 215/255.0, green: 166/255.0, blue: 120/255.0, alpha: 1.0)
+                laterIcon.alpha = 0
+                listIcon.alpha = 1
+                rescheduleView.alpha = 0
             }
 
         

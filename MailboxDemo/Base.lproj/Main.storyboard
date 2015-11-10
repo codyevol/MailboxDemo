@@ -37,16 +37,16 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" id="Mc0-h3-hav" userLabel="right swipe">
-                                                <rect key="frame" x="264" y="21" width="48" height="46"/>
+                                                <rect key="frame" x="5" y="21" width="48" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="delete_icon" id="KhK-Fb-srm">
-                                                        <rect key="frame" x="13" y="2" width="25" height="25"/>
+                                                        <rect key="frame" x="9" y="11" width="25" height="25"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <animations/>
                                                     </imageView>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="archive_icon" id="MLF-S1-svX">
-                                                        <rect key="frame" x="16" y="6" width="25" height="25"/>
+                                                        <rect key="frame" x="9" y="11" width="25" height="25"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <animations/>
                                                     </imageView>
@@ -54,11 +54,11 @@
                                                 <animations/>
                                             </view>
                                             <view contentMode="scaleToFill" id="a9E-O7-89p" userLabel="left swipe">
-                                                <rect key="frame" x="8" y="21" width="48" height="46"/>
+                                                <rect key="frame" x="269" y="21" width="48" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="later_icon" id="466-s1-deW">
-                                                        <rect key="frame" x="11" y="13" width="25" height="25"/>
+                                                        <rect key="frame" x="11" y="11" width="25" height="25"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <animations/>
                                                     </imageView>
@@ -84,7 +84,7 @@
                                         <gestureRecognizers/>
                                     </view>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed" id="9Yu-L5-hi9" userLabel="Feed">
-                                        <rect key="frame" x="0.0" y="85" width="320" height="1202"/>
+                                        <rect key="frame" x="0.0" y="86" width="320" height="1202"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
@@ -102,6 +102,11 @@
                                 </segments>
                                 <color key="tintColor" red="0.4039215686" green="0.73333333329999995" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="reschedule" id="MNe-fb-FRx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -116,6 +121,7 @@
                         <outlet property="leftSwipe" destination="a9E-O7-89p" id="Dl9-H6-Myt"/>
                         <outlet property="listIcon" destination="gFQ-Kg-DnO" id="SwF-gf-V79"/>
                         <outlet property="messageView" destination="J5W-ni-ApM" id="ciN-uB-vA9"/>
+                        <outlet property="rescheduleView" destination="MNe-fb-FRx" id="k1l-bD-DQo"/>
                         <outlet property="rightSwipe" destination="Mc0-h3-hav" id="nFP-xq-2Nd"/>
                         <outlet property="scrollView" destination="cTC-hU-waA" id="Lnz-Fk-ITe"/>
                         <outlet property="singleMessage" destination="KGP-hD-CZh" id="oJB-Zc-xXT"/>
@@ -143,6 +149,7 @@
         <image name="mail_nav_icon" width="25" height="20"/>
         <image name="message" width="320" height="86"/>
         <image name="nav" width="320" height="65"/>
+        <image name="reschedule" width="320" height="568"/>
         <image name="search" width="320" height="42"/>
     </resources>
 </document>
