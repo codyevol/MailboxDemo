@@ -33,7 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="KGP-hD-CZh" userLabel="Single Message">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" id="Mc0-h3-hav" userLabel="right swipe">
@@ -52,7 +52,6 @@
                                                     </imageView>
                                                 </subviews>
                                                 <animations/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" id="a9E-O7-89p" userLabel="left swipe">
                                                 <rect key="frame" x="8" y="21" width="48" height="46"/>
@@ -70,10 +69,9 @@
                                                     </imageView>
                                                 </subviews>
                                                 <animations/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="message" id="J5W-ni-ApM">
-                                                <rect key="frame" x="0.0" y="1" width="320" height="86"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <animations/>
                                                 <gestureRecognizers/>
@@ -86,7 +84,7 @@
                                         <gestureRecognizers/>
                                     </view>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed" id="9Yu-L5-hi9" userLabel="Feed">
-                                        <rect key="frame" x="0.0" y="87" width="320" height="1202"/>
+                                        <rect key="frame" x="0.0" y="85" width="320" height="1202"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
